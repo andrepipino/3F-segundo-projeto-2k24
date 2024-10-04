@@ -12,9 +12,9 @@ async function visualizaDadosGlobais(){
    
    
     const paragrafo = document.createElement('p')
-    paragrafo.classList.add('graficos-texto')
+    paragrafo.classList.add('.graficos-texto')
     const container = document.getElementById('graficos-container')
-    paragrafo.innerHTML = `No mundo tem ${totalPessoasMundo} bilhões de habitantes estão conectados em alguma rede social por um tempo médio de ${tempoMedio}.`
+    paragrafo.innerHTML = `No mundo tem <span>${totalPessoasMundo} bilhões </span> de habitantes estão conectados em alguma rede social por um tempo médio de <span> ${tempoMedio}.`
 
     container.appendChild(paragrafo);
 

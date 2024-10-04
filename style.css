@@ -50,3 +50,26 @@ nav a:hover{
     transform: scale(0.9);
     transition: transform 0.5s;
 }
+
+span{
+    color: var (--cor-secundária);
+    font-weight:bold;
+}
+
+footer{
+    background-color: var (--cor-primaria);
+    color: var(--cor-de-fundo);
+    text-align: center;
+}
+     
+
+.graficos-container{
+    margin: 5rem;
+}
+
+.graficos-texto{
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 2rem;
+    border: var(--cor-secundaria) solid 2px;
+}
