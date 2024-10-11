@@ -5,16 +5,16 @@ console.log(url);
 async function visualizaDadosGlobais(){
     const res = await fetch(url);
     const dados = await res.json();
-    const totalPessoasMundo = (dados.total_Pessoas_Mundo)/1e9;
-    const totalPessoasConectadas = (dados.total_Pessoas_Conectadas)/1e9;
-    const tempoMedio = dados.tempo_Medio;
+    const totalPessoasMundo = (dados.total_pessoas_mundo)/1e9;
+    const totalPessoasConectadas = (dados.total_pessoas_conectadas)/1e9;
+    const tempoMedio = dados.tempo_medio;
     console.log(dados);
    
    
     const paragrafo = document.createElement('p')
     paragrafo.classList.add('graficos-texto')
     const container = document.getElementById('graficos-container')
-    paragrafo.innerHTML = `No mundo tem ${totalPessoasMundo} bilhões de habitantes estão conectados em alguma rede social por um tempo médio de ${tempoMedio}.`
+    paragrafo.innerHTML = `No mundo tem <span>${totalPessoasMundo} bilhões</span>stão conectados em alguma rede social dos quais<span> ${totalPessoasConectadas} bilhões </span>estão conectados em alguma rede social por um tempo médio de <span>${tempoMedio}</span>.`;
 
     container.appendChild(paragrafo);
 
