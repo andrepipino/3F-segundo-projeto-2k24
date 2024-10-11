@@ -52,23 +52,22 @@ nav a:hover{
 }
 
 span{
-    color: var (--cor-secundária);
-    font-weight:bold;
+    color: var(--cor-1);
+    font-weight: bold;
 }
 
 footer{
-    background-color: var (--cor-primaria);
+    background-color: var(--cor-primaria);
     color: var(--cor-de-fundo);
     text-align: center;
 }
-     
 
 .graficos-container{
     margin: 5rem;
 }
 
 .graficos-texto{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-align: center;
     padding: 2rem;
     border: var(--cor-secundaria) solid 2px;
